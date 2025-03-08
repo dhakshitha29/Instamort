@@ -1,0 +1,109 @@
+/* General Styling */
+.mort {
+    font-family: "Work Sans", serif;
+    padding: 1em;
+    text-align: center;
+}
+.thed{
+    margin-top: 3.5em;
+    font-weight: bolder;
+}
+.cal {
+    width: 60vw;
+    max-width: 600px;
+    padding: 1.5em;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-group-text {
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    font-size: 14px;
+}
+
+/* Button Styling */
+button.calculate {
+    background-color: #770ea8;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button.calculate:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Monthly Payment Display */
+h5.pay {
+    background-color: #C8ACD6;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 844px) {
+    .cal {
+        width: 90vw;
+        padding: 1em;
+    }
+
+    .input-group-text {
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    button.calculate {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h5.pay {
+        font-size: 16px;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 514px) {
+    .thed{
+        text-align: center;
+    }
+    .cal {
+        width: 95vw;
+        overflow-x: scroll;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .input-group{
+        min-width: 250px;
+    }
+
+    .input-group-text {
+        font-size: 12px !important;
+    }
+
+    button.calculate {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h5.pay {
+        font-size: 14px;
+    }
+}

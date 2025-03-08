@@ -1,0 +1,23 @@
+.titlee {
+    list-style-type: none;
+    font-family: "Playwrite IT Moderna", serif;
+    font-size:large;
+}
+.size{
+    font-size: smaller;
+    margin-bottom: 8px;
+}
+.social-icons{
+    display: flex;
+    gap: 1em;
+    padding: 0.5em;
+}
+.icon {
+    font-size: 20px;
+    color: black; /* Set icon color to black */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: gray; /* Slight color change on hover */
+  }

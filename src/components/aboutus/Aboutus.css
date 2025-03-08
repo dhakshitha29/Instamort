@@ -1,0 +1,135 @@
+.whole{
+    font-family: "Work Sans", serif;
+}
+.mid{
+    text-align: center;
+    padding: 10%;
+}
+.upper{
+    padding: 3em;
+    width: 100vw;
+    background: linear-gradient(to bottom, #f0e7f5, #f1e2f7, #ecddf4);
+}
+.upper button{
+    background-color: #580280;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1em;
+}
+@media (min-width:820px) {
+    .upper{
+        display: flex;
+        gap: 2em;
+    }
+    .upper img{
+        width: 45vw;
+    }
+}
+@media (max-width:819px) {
+    .upper img{
+        display: block;
+        margin: auto;
+        width: 65vw;
+    }
+    .upper div{
+        margin-top: 2em;
+    }
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.contain{
+    padding: 5px 15px;
+    position: relative;
+    width: 40%;
+    background: linear-gradient(to bottom, #f0e7f5, #f1e2f7, #ecddf4);
+}
+.text-box{
+    padding: 10px 40px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-cont{
+    left:9.5%;
+}
+.right-cont{
+    right: -50.5%;
+}
+.contain button{
+    position: absolute;
+    width: 60px;
+    right: -35px;
+    top: -15px;
+    border-radius: 12px;
+    background-color: #C8ACD6;
+    z-index: 10;
+}
+.right-cont button{
+    left: -35px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #aeabab;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+.left-cont-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+}
+.right-cont-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    left: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+}
+@media screen and (max-width:600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .contain{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .right-cont{
+        left: 9.5%;
+    }
+    .left-cont button,.right-cont button{
+        left: 10px;
+    }
+    .left-cont-arrow,.right-cont-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
+    }
+}
